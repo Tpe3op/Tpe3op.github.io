@@ -18,8 +18,9 @@ function createListElement() {
 	var li = document.createElement("li");
     var btn = document.createElement("button");
 	li.appendChild(document.createTextNode(input.value));
-    btn.appendChild(document.createTextNode("Delete"));
+    btn.appendChild(document.createTextNode("Obriši"));
 	li.appendChild(btn);
+    btn.classList.add("btn");
     ul.appendChild(li)
 	input.value = "";
     li.addEventListener('click', toggle);
